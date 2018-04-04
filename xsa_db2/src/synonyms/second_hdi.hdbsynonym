@@ -1,9 +1,0 @@
-{
-  "XSA_TEST2.xsa_db2.synonyms::Synonym_0": {
-    "target": {
-      "object": "XSA_TEST1.xsa_db.data::PurchaseOrder.Header",
-      "schema": "PSW_XSA_1_1",
-      "database": "XSD"
-    }
-  }
-}
