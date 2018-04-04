@@ -1,0 +1,16 @@
+{
+  "XSA_TEST2.xsa_db2.synonyms::Header": {
+    "target": {
+      "object": "XSA_TEST1.xsa_db.data::PurchaseOrder.Header",
+      "schema": "PSW_XSA_1_1",
+      "database": "XSD"
+    }
+  },
+  "XSA_TEST2.xsa_db2.synonyms::Item": {
+    "target": {
+      "object": "XSA_TEST1.xsa_db.data::PurchaseOrder.Item",
+      "schema": "PSW_XSA_1_1",
+      "database": "XSD"
+    }
+  }
+}
