@@ -1,9 +1,14 @@
 {
-    "USPSW00-zhfstzktwaav1ypj-XSA_TEST1-hdi_xsa_db" : {
+    "labs-hdi-grantor" : {
        "object_owner": {
           "container_roles": [
-               "XSA_TEST1.xsa_db.roles::external_access"
+               "XSA_TEST1.xsa_db.roles::external_access_g#"
                ]
-            }
+		},
+		"application_user": {
+			"container_roles": [
+				"XSA_TEST1.xsa_db.roles::external_access"
+			]
+		}
         }
 }
