@@ -1,19 +1,27 @@
 ID: XSA_TEST2
 _schema-version: '2.0'
 version: 0.0.1
-
 modules:
- - name: xsa_db2
-   type: hdb
-   path: xsa_db2
-   requires:
-    - name: hdi_xsa_db2
-
+  - name: xsa_db2
+    type: hdb
+    path: xsa_db2
+    requires:
+      - name: hdi_xsa_db2
+        properties:
+          TARGET_CONTAINER: ~{hdi-container-name}
+      - name: labs-hdi-grantor1
+        group: SERVICE_REPLACEMENTS
+        properties:
+          key: labs-hdi-grantor
+          service: ~{labs-hdi-grantor2}
 resources:
- - name: hdi_xsa_db2
-   parameters:
-      config:
-         schema: PSW_XSA_2
-   properties:
+  - name: hdi_xsa_db2
+    properties:
       hdi-container-name: ${service-name}
-   type: com.sap.xs.hdi-container
+    type: com.sap.xs.hdi-container
+  - name: labs-hdi-grantor1
+    properties:
+      labs-hdi-grantor2: ${service-name}
+    parameters:
+      service-name: USPSW00-zhfstzktwaav1ypj-XSA_TEST1-hdi_xsa_db
+    type: org.cloudfoundry.existing-service
