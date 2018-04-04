@@ -1,0 +1,18 @@
+{
+	"role":{
+		"name": "XSA_TEST2.xsa_db2.roles::admin",
+		"schema_privileges": [{
+		   "privileges": ["SELECT METADATA",
+		    			  "SELECT CDS METADATA",
+		    			  "SELECT",
+		    			  "INSERT",
+		    			  "EXECUTE",
+		    			  "DELETE",
+		    			  "UPDATE",
+		    			  "CREATE TEMPORARY TABLE",
+		    			  "TRIGGER"
+		   ]
+		}]
+
+      }
+}

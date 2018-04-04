@@ -1,0 +1,8 @@
+{
+	"role":{
+		"name": "default_access_role",
+		"schema_roles": [{
+		 "names": ["XSA_TEST2.xsa_db2.roles::admin"]
+		}]
+	}
+}
