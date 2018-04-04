@@ -2,7 +2,7 @@
     "USPSW00-zhfstzktwaav1ypj-XSA_TEST1-hdi_xsa_db" : {
        "object_owner": {
           "container_roles": [
-               "XSA_TEST1.xsa_db.roles::external_access_g#"
+               "XSA_TEST1.xsa_db.roles::external_access"
                ]
             }
         }
