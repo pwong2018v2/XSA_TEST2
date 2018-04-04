@@ -1,5 +1,5 @@
 {
-  "XSA_TEST2.xsa_db2.synonyms::Header": {
+  "XSA_TEST2.xsa_db2.synonyms::Headers": {
     "target": {
       "object": "XSA_TEST1.xsa_db.data::PurchaseOrder.Header",
       "schema": "PSW_XSA_1_1",
